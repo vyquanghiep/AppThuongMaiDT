@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import {Text, TextInput, View, StyleSheet, TouchableOpacity, Button} from 'react-native';
+import Wellcome from './components/views/wellcome';
 
-export default function App() {
+ 
+
+ {/*import SignUp from './components/views/signup'; */}
+
+const  App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Wellcome></Wellcome>
+   
   );
 }
+export default App
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
